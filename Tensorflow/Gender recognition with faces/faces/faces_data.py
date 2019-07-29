@@ -23,12 +23,13 @@ PHOTOS_DIR = [os.listdir(DATADIR)]
 PHOTO_SIZE = 100
 
 #Its the limit where I should stop loading the pictures in order to maintain 50/50 ballance between genders.
-GENDER_LIMIT = 2000 #3105 #4370
+GENDER_LIMIT = 4370 #3105 #4370
 
 training_data = []
 
-#Limit index for loading only 4000 pictures
-IDX = 4000
+#Limit index for loading only 4000 pictures 
+#IDX HAS TO BE LOWER THAN GENDER LIMIT ! 
+IDX = 4367
 
 def create_empty_array(length):
     a = []
