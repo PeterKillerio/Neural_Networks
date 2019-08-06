@@ -19,6 +19,11 @@ There are different python files:
     This predictor uses opencv haarcascade to extract faces from video and later crop/resize/convert to gray and use
     as a input for cnn.
     
+https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Gender%20recognition%20with%20faces/faces/elon_original.png?raw=true
+   
+https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Gender%20recognition%20with%20faces/faces/elon_recognized.png?raw=true
+
+
 Dataset could be downloaded from https://susanqq.github.io/UTKFace/ 
 but I deleted the faces of people with age <8 because I cant differentiate the gender of those faces myself.
 So find in code the directory of those faces and rename them I had my own faces_wo_kids (<8) dataset.
