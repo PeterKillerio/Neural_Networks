@@ -1,4 +1,4 @@
-Example video: https://www.youtube.com/watch?v=PdgOubpjWac
+<b>Example video:</b> https://www.youtube.com/watch?v=PdgOubpjWac
 
 I think this was my ninth neural network per se that I’ve build and tested. 
 And fourth in the meaning that the objective of the neural network was somewhat “original” in the sense that I didn’t follow any full sized step by step tutorial but relied on previously build neural networks, online information about the topic, recommendations as well as finding online datasets and one time creating my own dataset for hand detection. 
@@ -27,7 +27,7 @@ video/movie based upon the emotion and optionally a specific persona.
 
 I divided this project into specific parts which were. 
 
-1.	Read video/camera feed and get images
+<b>1.	Read video/camera feed and get images
 2.	Get faces from these images
 3.	Get only images which are aligned to be recognized in other words recognize if there are eyes in the face picture
 4.	Crop this face picture from image
@@ -39,7 +39,7 @@ d.	Train, test, train, test, train, test, train…….
 e.	Deploy
 6.	Get the emotions and save them accordingly to some data format which will be then exported.
 7.	Export data to the csv file
-8.	Import the data from csv file and apply it on video to crop/extract face with desired emotion
+8.	Import the data from csv file and apply it on video to crop/extract face with desired emotion</b>
 
 
 As I worked with OpenCV Python library before I knew what it is capable of and it was my first option.
@@ -48,20 +48,26 @@ TensorFlow library was with combination used for point 5 and then I used csv lib
 
 I don’t have intention to make this article a full-sized tutorial with code examples but rather general talk on how I did it.
 
-Point 1
+<b>Point 1</b>
+	
 	Getting the video/camera feed and getting the images is very simple task for which I used OpenCV python library. This can really be done with couple lines of code. There are numerous examples on how to do this both in Python as well as in C++ and I would recommend for starters to fly through some general OpenCV tutorial like on pythonprogramming.net/tutorial on YouTube from sentdex.
 
-Point 2
+<b>Point 2</b>
+
 	My intention wasn’t to reinvent the wheel in face detection so I used haarcascades which are open source xml files/classifiers which can be imported to use with OpenCV. As far as I know they have license from Intel and can’t be used commercially. If you want to use it commercially, I would check out the face_recognition python library which has deep NN for face detection implemented and is open-source or use any other way you can find.
 
-Point 3 
+<b>Point 3</b>
+
 	As I mentioned I wanted to use faces which are aligned i.e. they have frontal face in the picture I thought that nice way to accomplish this would be to have eye detection within face detection so the face is acknowledged only when there are 2+ eyes in the picture. 2+ because sometimes the OpenCV recognizes eyes in mouth corners etc. In order to use eye detection, you can download yet another haarcasecade xml file. Just search haarcascades OpenCV Python GitHub and you will find couple of the and there should be at least one with the name eye detection.
 
-Point 4
+<b>Point 4</b>
+
 	To be able to crop face from the picture you need the data about the position of the left upper corner and right down corner. This data can be saved from the previous use of face detection which haarcascade detection command returns x,y,w,h (x, y, width, height) coordinates. You just the need to use this data as arguments in OpenCV command for cropping picture, again just quick search will get you to the command.
 
-Point 5
-Transfer learning
+<b>Point 5</b>
+
+<b>Transfer learning</b>
+	
 	For me in order to detect emotions in pictures I need to have emotion detector implemented. 
   So, I used deep CNNs because I don’t know about any other way how it could be done, maybe 
   hardcoding features and filters but that would be a mess. 
@@ -91,7 +97,8 @@ using my webcam it was horrible. After checking the output, I discovered that th
 was very binary-like, most of the values were zero and the ouputs from the implemented model were jumping 
 like crazy so I tried another strategy.
 
-CNN implementation
+<b>CNN implementation</b>
+
 	After this unsuccessful attempt I just decided to create my own CNN, using the code I used for creating past
   CNNs I added few layers, changed the input, change the data format (I no longer needed 3 channels) and started training. 
   I trained at least 20+ models and watched how the validation loss/success rate varied and settled on solid 57% from 
@@ -103,11 +110,13 @@ After I tested my models, I decided that it was good enough and as I mentioned I
 To improve this model, I also moved over 5000 pictures from testing dataset to training dataset and my
 training dataset had 1000 pictures and my training over 33 000 I think.
 
-Point 6
+<b>Point 6</b>
+
 	All I had to do right now was just to tinker. Use this model automatically to detect emotions on every frame 
   of the video/camera, create rectangles for eyes, face and add text of emotion next to every face.
 
-Point 7-8
+<b>Point 7-8</b>
+
 	After that I created data format which will be used to store my data about the video. I used data format like this.
 [frame, face, 'Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
 First two columns told on which frame the data had been recorded and how many faces there are,
@@ -131,9 +140,10 @@ the person was speaking but calmed down when he/she didn’t. The emotions relat
 they were more consistent. After changing the values from 2 to 5 to 10 I saw very noticeable increase 
 and I was really happy with the result.
 
+<b>Without repeater</b>
 ![alt text]( https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/happy_faces_1.png)
+<b>With repeater</b>
 ![alt text]( https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/happy_faces_repeater.png)
-
 
  So you can try it yourself, just add a video to my code directory, 
  change the name of the file in the generate data python file, generate data, 
