@@ -1,4 +1,5 @@
 Example video: https://www.youtube.com/watch?v=PdgOubpjWac
+
 I think this was my ninth neural network per se that I’ve build and tested. 
 And fourth in the meaning that the objective of the neural network was somewhat “original” in the sense that I didn’t follow any full sized step by step tutorial but relied on previously build neural networks, online information about the topic, recommendations as well as finding online datasets and one time creating my own dataset for hand detection. 
 
