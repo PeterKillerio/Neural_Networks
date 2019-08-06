@@ -62,25 +62,20 @@ TensorFlow library was with combination used for point 5 and then I used csv lib
 I don’t have intention to make this article a full-sized tutorial with code examples but rather general talk on how I did it.
 
 <b>Point 1</b>
-	
 	Getting the video/camera feed and getting the images is very simple task for which I used OpenCV python library. This can really be done with couple lines of code. There are numerous examples on how to do this both in Python as well as in C++ and I would recommend for starters to fly through some general OpenCV tutorial like on pythonprogramming.net/tutorial on YouTube from sentdex.
 
 <b>Point 2</b>
-
 	My intention wasn’t to reinvent the wheel in face detection so I used haarcascades which are open source xml files/classifiers which can be imported to use with OpenCV. As far as I know they have license from Intel and can’t be used commercially. If you want to use it commercially, I would check out the face_recognition python library which has deep NN for face detection implemented and is open-source or use any other way you can find.
 
 <b>Point 3</b>
-
 	As I mentioned I wanted to use faces which are aligned i.e. they have frontal face in the picture I thought that nice way to accomplish this would be to have eye detection within face detection so the face is acknowledged only when there are 2+ eyes in the picture. 2+ because sometimes the OpenCV recognizes eyes in mouth corners etc. In order to use eye detection, you can download yet another haarcasecade xml file. Just search haarcascades OpenCV Python GitHub and you will find couple of the and there should be at least one with the name eye detection.
 
 <b>Point 4</b>
-
 	To be able to crop face from the picture you need the data about the position of the left upper corner and right down corner. This data can be saved from the previous use of face detection which haarcascade detection command returns x,y,w,h (x, y, width, height) coordinates. You just the need to use this data as arguments in OpenCV command for cropping picture, again just quick search will get you to the command.
 
 <b>Point 5</b>
 
 <b>Transfer learning</b>
-	
 	For me in order to detect emotions in pictures I need to have emotion detector implemented. 
   So, I used deep CNNs because I don’t know about any other way how it could be done, maybe 
   hardcoding features and filters but that would be a mess. 
@@ -111,7 +106,6 @@ was very binary-like, most of the values were zero and the ouputs from the imple
 like crazy so I tried another strategy.
 
 <b>CNN implementation</b>
-
 	After this unsuccessful attempt I just decided to create my own CNN, using the code I used for creating past
   CNNs I added few layers, changed the input, change the data format (I no longer needed 3 channels) and started training. 
   I trained at least 20+ models and watched how the validation loss/success rate varied and settled on solid 57% from 
@@ -124,12 +118,10 @@ To improve this model, I also moved over 5000 pictures from testing dataset to t
 training dataset had 1000 pictures and my training over 33 000 I think.
 
 <b>Point 6</b>
-
 	All I had to do right now was just to tinker. Use this model automatically to detect emotions on every frame 
   of the video/camera, create rectangles for eyes, face and add text of emotion next to every face.
 
 <b>Point 7-8</b>
-
 	After that I created data format which will be used to store my data about the video. I used data format like this.
 [frame, face, 'Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
 First two columns told on which frame the data had been recorded and how many faces there are,
