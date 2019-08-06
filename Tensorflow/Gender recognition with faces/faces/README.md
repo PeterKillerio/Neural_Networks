@@ -24,3 +24,6 @@ but I deleted the faces of people with age <8 because I cant differentiate the g
 So find in code the directory of those faces and rename them I had my own faces_wo_kids (<8) dataset.
 Dataset is loaded and formated to have 50/50 % gender ballance but loads just 4000 pictures. This can be modified in code.
 As well as height/width can be modified in code, I used 100x100.
+
+Preview of the network on video:
+https://www.youtube.com/watch?v=6htumlO3MgU
