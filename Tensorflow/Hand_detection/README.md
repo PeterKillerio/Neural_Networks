@@ -27,12 +27,17 @@ FPS weren’t very high but these things are recommended to run on GPU/TPU, but 
 the model to tflite and by using quantized model mobilenet as well as using post training quantization 
 (I don’t have experience with these techniques, just a rather theoretical understanding but I plan 
 to use my models on android so I will try to work tflite models).
+
 This model I did isn’t very robust and there could be couple of reasons for that:
 Hand is rather more complicated thing to detect if you take into account all the shapes and all the angles 
-from which the hand can be observed. In my training data there were various cases of hands but after 
+from which the hand can be observed. 
+
+In my training data there were various cases of hands but after 
 I retrained the model I theorized if my success rate would improve by not adding hand in pockets 
 and hands beside body into my training dataset. If I was f.e. using my model to detect waving I would include 
-just the images of hand facing to and from the camera view. Nice project for this would be the possibility 
+just the images of hand facing to and from the camera view. 
+
+Nice project for this would be the possibility 
 to play rock, paper, scissors with your computer in that sense you would have to think about the angle of the camera 
 and try to find the dataset dedicated to this. Google had a conference about TensorFlow library 
 few months back at the time of writing this article and the example with which they presented the power of this 
@@ -40,6 +45,7 @@ library was specifically the rock, paper, scissor game. The difference was that 
 object detection or were playing the came from more difficult angles. They were playing the game from 
 top view on the same surface and the hands were in the same position, I’m not sure about the robustness 
 but it’s still a great and simple example.
+
 Back to my model. 
 
 Transfer learning using object detection model from TensorFlow is not a very 
