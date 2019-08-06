@@ -9,7 +9,7 @@ There are different python files:
       to uncomment the model.save in those python files.
       There are already some trained models in /models folder.
   
-  predict_in_input_photos.py does preditions of faces in input /photos_file (faces have to be precropped)
+  <b>predict_in_input_photos.py</b> does preditions of faces in input /photos_file (faces have to be precropped)
     prediction 0 = male
     preditction 1 = female
   
