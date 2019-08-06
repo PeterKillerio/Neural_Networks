@@ -27,7 +27,8 @@ video/movie based upon the emotion and optionally a specific persona.
 
 I divided this project into specific parts which were. 
 
-<b>1.	Read video/camera feed and get images
+<b>
+1.	Read video/camera feed and get images
 	
 2.	Get faces from these images
 
@@ -37,15 +38,15 @@ I divided this project into specific parts which were.
 
 5.	Feed this face picture into the face emotion recognition CNN
 
-a.	Get the dataset
+	a.	Get the dataset
 
-b.	Prepare the dataset
+	b.	Prepare the dataset
 
-c.	Create model for CNN
+	c.	Create model for CNN
 
-d.	Train, test, train, test, train, test, train…….
+	d.	Train, test, train, test, train, test, train…….
 
-e.	Deploy
+	e.	Deploy
 
 6.	Get the emotions and save them accordingly to some data format which will be then exported.
 
