@@ -16,16 +16,11 @@ transfer learning on some existing model for object detection in my case MobileN
 
 Example video: https://www.youtube.com/watch?v=2LuNuRDRcN8
 
-![alt text]
-(https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/elon_original.jpg)
-![alt text]
-(https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/elon_recognized.png)
-![alt text]
-(https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/trump_original.jpg)
-![alt text]
-(https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/trump_recognized.png)
-![alt text]
-(https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/google_search.png)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/elon_original.jpg)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/elon_recognized.png)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/trump_original.jpg)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/trump_recognized.png)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/google_search.png)
 
 I could detect hand in an image and video in real time just on CPU. 
 FPS weren’t very high but these things are recommended to run on GPU/TPU, but you could optimize for speed by converting 
