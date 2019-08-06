@@ -1,4 +1,12 @@
 <b>Example video:</b> https://www.youtube.com/watch?v=PdgOubpjWac
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/my_photos/me_angry.png)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/my_photos/me_disgust.png)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/my_photos/me_fear.png)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/my_photos/me_happy.png)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/my_photos/me_neutral.png)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/my_photos/me_sad.png)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/my_photos/me_surprise.png)
+
 
 I think this was my ninth neural network per se that I’ve build and tested. 
 And fourth in the meaning that the objective of the neural network was somewhat “original” in the sense that I didn’t follow any full sized step by step tutorial but relied on previously build neural networks, online information about the topic, recommendations as well as finding online datasets and one time creating my own dataset for hand detection. 
