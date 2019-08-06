@@ -1,8 +1,8 @@
 This folder contains CNN for gender recognition based on face/facial features.
 There are different python files:
 
-  faces_data.py formats data in the dataset folder and saves it as X.picle and y.picle
-  faces_train.py/faces_train_multi.py trains the model but the differences between the two are those that
+  <b>faces_data.py</b>formats data in the dataset folder and saves it as X.picle and y.picle
+  <b>faces_train.py/faces_train_multi.py</b> trains the model but the differences between the two are those that
     _multi.py has different variations of models which you specify in the header.
       
       Statistics about those trained models are saves in /logs and the models could be saved but you have
@@ -13,7 +13,7 @@ There are different python files:
     prediction 0 = male
     preditction 1 = female
   
-  predict_in_video_create_video.py predict in real time gender of the people in the video for SPECIFIED number of images
+   <b>predict_in_video_create_video.py</b> predict in real time gender of the people in the video for SPECIFIED number of images
     which can be modifie in the code. This video is also saved as outpy videofile.
     This predictor uses opencv haarcascade to extract faces from video and later crop/resize/convert to gray and use
     as a input for cnn.
