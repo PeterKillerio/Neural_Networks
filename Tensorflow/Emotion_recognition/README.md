@@ -1,4 +1,10 @@
 <b>Example video:</b> https://www.youtube.com/watch?v=PdgOubpjWac
+
+
+
+
+
+
 ![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/my_photos/me_angry.png)
 ![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/my_photos/me_disgust.png)
 ![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Emotion_recognition/my_photos/me_fear.png)
