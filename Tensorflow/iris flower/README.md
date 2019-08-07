@@ -14,3 +14,4 @@ Dataset structure is as follows:
 
   sepal_length/sepal_width/petal_length/petal_width/species
   
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/iris%20flower/iris.png)
