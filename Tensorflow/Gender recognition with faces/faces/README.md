@@ -1,3 +1,5 @@
+<b>Example:</b> https://www.youtube.com/watch?v=6htumlO3MgU
+
 This folder contains CNN for gender recognition based on face/facial features.
 There are different python files:
 
@@ -30,5 +32,4 @@ So find in code the directory of those faces and rename them I had my own faces_
 Dataset is loaded and formated to have 50/50 % gender ballance but loads just 4000 pictures. This can be modified in code.
 As well as height/width can be modified in code, I used 100x100.
 
-Preview of the network on video:
-https://www.youtube.com/watch?v=6htumlO3MgU
+
