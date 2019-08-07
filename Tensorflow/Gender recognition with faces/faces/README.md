@@ -1,4 +1,4 @@
-<b>Example:</b> https://www.youtube.com/watch?v=6htumlO3MgU
+<b>Example video:</b> https://www.youtube.com/watch?v=6htumlO3MgU
 
 This folder contains CNN for gender recognition based on face/facial features.
 There are different python files:
