@@ -14,7 +14,7 @@ Its tedious too start and get it going, I had to spend some hours of debugging a
 But the whole process took a lot more steps that I expected in order to do 
 transfer learning on some existing model for object detection in my case MobileNet V1 COCO. But after hours and hours it magically worked. 
 
-Example video: https://www.youtube.com/watch?v=2LuNuRDRcN8
+<b>Example video:</b> https://www.youtube.com/watch?v=2LuNuRDRcN8
 
 ![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/elon_original.jpg)
 ![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Hand_detection/elon_recognized.png)
