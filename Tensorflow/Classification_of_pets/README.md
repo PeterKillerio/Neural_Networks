@@ -10,3 +10,7 @@ This CNN can be train from dataset which can be downloaded from https://www.micr
 and to use this code save it in main dir folders Datasets/PetImages/Cat Datasets/PetImages/Dog.
 
 Preparation of dataset, training and predicting are implemented.
+
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Classification_of_pets/cat_dog_cmd.png)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Classification_of_pets/cat.jpg)
+![alt text](https://github.com/PeterKillerio/Neural_Networks/blob/master/Tensorflow/Classification_of_pets/dog.jpg)
